@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_main_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="停止" />
+
+    <Button
+        android:id="@+id/btn_main_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_main_stop"
+        android:layout_centerHorizontal="true"
+        android:text="前进" />
+
+    <Button
+        android:id="@+id/btn_main_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_main_stop"
+        android:layout_centerHorizontal="true"
+        android:text="后退" />
+
+    <Button
+        android:id="@+id/btn_main_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_main_stop"
+        android:layout_toStartOf="@id/btn_main_stop"
+        android:text="左转" />
+
+    <Button
+        android:id="@+id/btn_main_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/btn_main_stop"
+        android:layout_toRightOf="@id/btn_main_stop"
+        android:text="右转" />
+
+
+</RelativeLayout>

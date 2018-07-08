@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="连接MQTT"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/et_splash_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入MQTT服务器IP"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_splash_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入MQTT服务器端口"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/cb_splash_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存配置" />
+
+    <Button
+        android:id="@+id/btn_splash_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接服务器" />
+
+</LinearLayout>
